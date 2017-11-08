@@ -1,7 +1,9 @@
 class BudgetPage
   @@add_budget = 'protect.budgetwatch:id/action_add'
 
-  @@budget_name =  'protect.budgetwatch:id/budgetNameEdit'
+  @@budget_name_edit =  'protect.budgetwatch:id/budgetNameEdit'
+
+  @@budget_name =  'protect.budgetwatch:id/budgetName'
 
   VALUE_EDIT = 'protect.budgetwatch:id/valueEdit'
 
@@ -20,7 +22,7 @@ class BudgetPage
   end
 
   def budget_name
-    $driver.find_element(:id, @@budget_name)
+    $driver.find_element(:id, @@budget_name_edit)
   end
 
   def value_edit
