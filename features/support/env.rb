@@ -8,11 +8,7 @@ def opts
    caps: {
       platformName: "Android",
       deviceName: "pixelemulator",
-<<<<<<< HEAD
-      app: ""
-=======
       app: ENV["BUDGETWATCH_FILE_PATH"]
->>>>>>> b0605967aecee52ba8a7b14365342f57cf6b7e89
     }
   }
 end
