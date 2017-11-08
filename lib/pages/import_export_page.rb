@@ -1,3 +1,4 @@
+
 class BudgetPage
   @@import_export_button = 'protect.budgetwatch:id/action_import_export'
 
@@ -23,3 +24,4 @@ class BudgetPage
     $driver.find_element(:id, @@success_field).displayed?
   end
 end
+
