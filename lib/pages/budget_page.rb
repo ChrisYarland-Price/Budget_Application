@@ -9,8 +9,8 @@ class BudgetPage
 
   SAVE_BUTTON = 'protect.budgetwatch:id/action_save'
 
-  def budget_is_displayed?
-    $driver.find_element(:id, @@budget_name).displayed?
+  def budget_name
+    $driver.find_element(:id, @@budget_name)
   end
 
   def is_displayed?
@@ -21,7 +21,7 @@ class BudgetPage
     $driver.find_element(:id, @@add_budget)
   end
 
-  def budget_name
+  def budget_name_field
     $driver.find_element(:id, @@budget_name_edit)
   end
 
