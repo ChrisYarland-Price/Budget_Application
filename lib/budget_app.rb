@@ -1,5 +1,4 @@
-require_relative "pages/main_page"
-require_relative "pages/budget_page"
+require_rel 'pages'
 
 module BudgetApp
 
@@ -11,4 +10,7 @@ module BudgetApp
     BudgetPage.new
   end
 
+  def transaction_page
+    TransactionPage.new
+  end
 end
