@@ -10,6 +10,12 @@ Before('@budget_created') do
     budget_page.save_button.click
 end
 
+Before('@transaction_created') do
+  transaction_page.add_transaction_button.click
+  transaction_page.fill_in_transaction
+  transaction_page.save_transaction
+end
+
 After do
   $driver.driver_quit
 end
