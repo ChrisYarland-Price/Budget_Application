@@ -10,4 +10,7 @@ module BudgetApp
     BudgetPage.new
   end
 
+  def transaction_page
+    TransactionPage.new
+  end
 end
