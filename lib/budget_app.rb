@@ -1,5 +1,4 @@
-require_relative "pages/main_page"
-require_relative "pages/budget_page"
+require_rel 'pages'
 
 module BudgetApp
 
