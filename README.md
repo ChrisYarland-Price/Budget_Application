@@ -34,3 +34,4 @@ three times and not twice.
 #### Martha
 
 #### James
+worked on export page, creating POM and feature, along with all the tests created. worked as team leader creating test cases and guiding the project and the team. also through motivation and train videos.
