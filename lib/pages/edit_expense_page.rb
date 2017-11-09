@@ -1,4 +1,4 @@
-class ViewExpensePage
+class EditExpensePage
 
 	@@name_field = 'protect.budgetwatch:id/nameEdit'
 	@@value_field = 'protect.budgetwatch:id/valueEdit'
