@@ -27,5 +27,8 @@ Another challenge we came across was when we were testing changing the date rang
 #### Luke
 
 #### Martha
+I wrote the edit transaction feature, which uses both the budget_created and transaction_created before hooks. It is a feature that uses two pages, the view expense page where the edit button is located and the edited data will be shown, and the edit expense page, which is the form with the fields that can be edited.
+
+Only two fields, Name and Value, are edited for the purpose of the test. An issue is that the previous entry is entered along with the new entry, and there was not time to find the solution to this. As the entry is edited, it is still tested.
 
 #### James

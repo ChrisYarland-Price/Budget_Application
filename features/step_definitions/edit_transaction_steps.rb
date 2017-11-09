@@ -16,8 +16,6 @@ end
 
 Then(/^The changes have been saved$/) do
 	transaction_page.get_transaction_name.click
-	view_expense_page.get_expense_name.displayed?
-	view_expense_page.get_expense_value.displayed?
 	expect(view_expense_page.get_expense_name.text).to eql ('Lambo New')
 	expect(view_expense_page.get_expense_value.text).to eql ('20.01')
 end
