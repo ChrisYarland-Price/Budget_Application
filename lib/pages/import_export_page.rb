@@ -1,4 +1,4 @@
-class BudgetPage
+class ExportPage
   @@import_export_button = 'protect.budgetwatch:id/action_import_export'
 
   @@export_field =  'android:id/text1'
