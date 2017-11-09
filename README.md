@@ -24,3 +24,4 @@ The user stories assisted us in creating our test cases/conditions, which were p
 #### Martha
 
 #### James
+worked on export page, creating POM and feature, along with all the tests created. worked as team leader creating test cases and guiding the project and the team. also through motivation and train videos.
