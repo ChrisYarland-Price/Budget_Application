@@ -13,4 +13,12 @@ module BudgetApp
   def transaction_page
     TransactionPage.new
   end
+
+  def settings_page
+    SettingsPage.new
+  end
+
+  def view_expense_page
+  	ViewExpensePage.new
+  end
 end
