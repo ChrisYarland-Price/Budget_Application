@@ -20,6 +20,8 @@ We installed the 'require_all' gem so that no one had to require their POMs ever
 
 Our main challenge during this project was when we were creating a new transaction for a budget, we wanted to check that the budget dropdown box was prepopulated with the name of the budget that we were attributing the transaction to. However, when we tried finding the element on the page, it could not be found by its id or xpath when we ran the tests. We overcame this by simply checking whether the name of the budget was found on the page somewhere which did pass.
 
+Another challenge we came across was when we were testing changing the date range for budgets. We could not get the app to scroll to select an end date by using either the ```scroll_to``` or ```scroll_to_exact``` methods. This was because there wasn't any unique text that was appropriate to scroll to since those methods require text as an argument. We solved this problem by using ```Appium::TouchAction.new.swipe(start_x: 144, start_y: 1634, end_x: 144, end_y: 149).perform``` to simulate a person scrolling down so that we could then select an end date.
+
 #### Chris
 
 #### Luke
