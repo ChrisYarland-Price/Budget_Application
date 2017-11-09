@@ -17,4 +17,8 @@ module BudgetApp
   def settings_page
     SettingsPage.new
   end
+
+  def import_export_page
+    ExportPage.new
+  end
 end
