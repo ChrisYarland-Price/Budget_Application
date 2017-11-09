@@ -2,8 +2,6 @@ class TransactionPage
   # transactions
   @@add_transaction = 'protect.budgetwatch:id/action_add'
   @@name_edit_field = 'protect.budgetwatch:id/nameEdit'
-  @@budget_field = 'protect.budgetwatch:id/budgetSpinner'
-  @@budget_field = '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[2]/android.widget.LinearLayout/android.widget.Spinner'
   @@account_field = 'protect.budgetwatch:id/accountEdit'
   @@value_field = 'protect.budgetwatch:id/valueEdit'
   @@note_field = 'protect.budgetwatch:id/noteEdit'

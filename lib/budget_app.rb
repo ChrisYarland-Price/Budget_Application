@@ -10,11 +10,19 @@ module BudgetApp
     BudgetPage.new
   end
 
+  def calendar_page
+    CalendarPage.new
+  end
+
   def transaction_page
     TransactionPage.new
   end
 
   def settings_page
     SettingsPage.new
+  end
+
+  def import_export_page
+    ExportPage.new
   end
 end
