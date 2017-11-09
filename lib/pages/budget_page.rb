@@ -5,6 +5,7 @@ class BudgetPage
   @@value_edit = 'protect.budgetwatch:id/valueEdit'
   @@save_button = 'protect.budgetwatch:id/action_save'
   @@date_range = 'protect.budgetwatch:id/dateRange'
+  @@calendar_link = 'protect.budgetwatch:id/action_calendar'
 
   def budget_name
     $driver.find_element(:id, @@budget_name)
@@ -28,6 +29,10 @@ class BudgetPage
 
   def value_edit
     $driver.find_element(:id, @@value_edit)
+  end
+
+  def calendar_button
+    $driver.find_element(:id, @@calendar_link)
   end
 
   def save_button

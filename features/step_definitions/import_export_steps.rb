@@ -1,10 +1,11 @@
 Given(/^I am on the import page$/) do
   import_export_page.import_export_button.click
-  import_export_page.import_export_button.is displayed?
+  import_export_page.file_allow.click
 end
 
 When(/^I select JSON format and click export$/) do
-  import_export_page.export_field.choose_json
+  import_export_page.export_field
+  import_export_page.choose_json
 end
 
 Then(/^the export is confirmed$/) do

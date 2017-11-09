@@ -10,6 +10,10 @@ module BudgetApp
     BudgetPage.new
   end
 
+  def calendar_page
+    CalendarPage.new
+  end
+
   def transaction_page
     TransactionPage.new
   end
