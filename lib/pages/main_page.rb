@@ -4,7 +4,9 @@ class MainPage
   @@settings_button = 'protect.budgetwatch:id/action_settings'
 
   def is_displayed?
-    $driver.find_elements(:id, BUDGET_AND_TRANSACTION)[0].displayed?
+    $driver.wait_true{
+      $driver.find_elements(:id, BUDGET_AND_TRANSACTION)[0].displayed?
+    }
   end
 
   def new_budget
