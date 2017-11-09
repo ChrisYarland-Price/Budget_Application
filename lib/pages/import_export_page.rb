@@ -1,13 +1,15 @@
 class ExportPage
   @@import_export_button = 'protect.budgetwatch:id/action_import_export'
 
-  @@export_field =  '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.Spinner/android.widget.TextView'
+  @@export_field =  'protect.budgetwatch:id/exportFileFormatSpinner'
 
   @@android_file_allow = 'com.android.packageinstaller:id/permission_allow_button'
 
   @@success_field =  'protect.budgetwatch:id/title_template'
 
-  @@json_field = '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[2]'
+  @@json_field = 'android:id/text1'
+
+  @@export_button = 'protect.budgetwatch:id/exportButton'
 
   def import_export_button
     $driver.find_element(:id, @@import_export_button)
@@ -18,12 +20,12 @@ class ExportPage
   end
   
   def export_field
-    
-    $driver.find_element(:id, @@export_field)
+    $driver.find_element(:id, @@export_button)
   end
 
   def choose_json
-    $driver.find_element(:id, @@json_field).click
+
+    $driver.find_elements(:id, @@json_field)[1].click
   end
 
   def sucess_field_displayed?

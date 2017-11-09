@@ -22,9 +22,14 @@ Our main challenge during this project was when we were creating a new transacti
 
 Another challenge we came across was when we were testing changing the date range for budgets. We could not get the app to scroll to select an end date by using either the ```scroll_to``` or ```scroll_to_exact``` methods. This was because there wasn't any unique text that was appropriate to scroll to since those methods require text as an argument. We solved this problem by using ```Appium::TouchAction.new.swipe(start_x: 144, start_y: 1634, end_x: 144, end_y: 149).perform``` to simulate a person scrolling down so that we could then select an end date.
 
-#### Chris
+#### Chris && Luke
+Working together we created the tests to change the receipt quality. This was fairly simple. 
 
-#### Luke
+We created the Tests to create a resource, the largest challenge during this test was that appium was not able to find the RESOURCES tab on the transactions page. We mitigated this by selecting the tab through the coordinates. The rest of that test was fairly straightforward.
+
+We created the back button test, which would test whether pressing back twice from the transactions page after having selected a budget would land us back on the homepage. This failed and it seems like the only way to do so is to use 
+```  $driver.back() ```
+three times and not twice.  
 
 #### Martha
 
