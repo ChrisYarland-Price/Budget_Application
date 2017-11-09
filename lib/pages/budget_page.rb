@@ -1,13 +1,10 @@
 class BudgetPage
   @@add_budget = 'protect.budgetwatch:id/action_add'
-
   @@budget_name_edit =  'protect.budgetwatch:id/budgetNameEdit'
-
   @@budget_name =  'protect.budgetwatch:id/budgetName'
-
-  VALUE_EDIT = 'protect.budgetwatch:id/valueEdit'
-
-  SAVE_BUTTON = 'protect.budgetwatch:id/action_save'
+  @@value_edit = 'protect.budgetwatch:id/valueEdit'
+  @@save_button = 'protect.budgetwatch:id/action_save'
+  @@date_range = 'protect.budgetwatch:id/dateRange'
 
   def budget_name
     $driver.find_element(:id, @@budget_name)
@@ -15,6 +12,10 @@ class BudgetPage
 
   def is_displayed?
     $driver.find_element(:id, @@add_budget).displayed?
+  end
+
+  def get_date_range
+    $driver.find_element(:id, @@date_range)
   end
 
   def add_budget
@@ -26,11 +27,11 @@ class BudgetPage
   end
 
   def value_edit
-    $driver.find_element(:id, VALUE_EDIT)
+    $driver.find_element(:id, @@value_edit)
   end
 
   def save_button
     $driver.find_element(:id, 
-      SAVE_BUTTON)
+      @@save_button)
   end
 end

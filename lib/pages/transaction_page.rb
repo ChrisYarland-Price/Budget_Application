@@ -1,8 +1,6 @@
 class TransactionPage
   @@add_transaction = 'protect.budgetwatch:id/action_add'
   @@name_edit_field = 'protect.budgetwatch:id/nameEdit'
-  @@budget_field = 'protect.budgetwatch:id/budgetSpinner'
-  @@budget_field = '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.TableLayout/android.widget.TableRow[2]/android.widget.LinearLayout/android.widget.Spinner'
   @@account_field = 'protect.budgetwatch:id/accountEdit'
   @@value_field = 'protect.budgetwatch:id/valueEdit'
   @@note_field = 'protect.budgetwatch:id/noteEdit'
@@ -15,9 +13,7 @@ class TransactionPage
   def enter_name_field
     $driver.find_element(:id, @@name_edit_field).send_keys('Lambo')
   end
-  def get_budget_field
-    $driver.find_element(:xpath, @@budget_field)
-  end
+
   def enter_account_field
     $driver.find_element(:id, @@account_field).send_keys('Debit')
   end
