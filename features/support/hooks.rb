@@ -11,8 +11,9 @@ Before('@budget_created') do
 end
 
 Before('@transaction_created') do
+	budget_page.budget_name.click
   transaction_page.add_transaction_button.click
-  transaction_page.fill_in_transaction
+  transaction_page.fill_in_transaction('Lambo','Debit', '20', "My husbando's lamborghini")
   transaction_page.save_transaction
 end
 

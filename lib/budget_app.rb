@@ -22,7 +22,16 @@ module BudgetApp
     SettingsPage.new
   end
 
+  def view_expense_page
+  	ViewExpensePage.new
+  end
+
+  def edit_expense_page
+  	EditExpensePage.new
+  end
+
   def import_export_page
     ExportPage.new
   end
+
 end
